@@ -2,7 +2,7 @@
 NanoCasTE is a new pipeline for detection of Transposable Element Insertions (TEIs) using Nanopore reads obtaining after CANS (Cas9-targeted Nanopore Sequencing (CANS, [Gilpatrick et al., Nature Biotechnolgy, 2021](https://www.nature.com/articles/s41587-020-0407-5)) sequencing.
 
 ![NanoCasTE pipeline](NanoCasTE.png)
-*Figure 1*. A workflow NanoCasTE pipeline
+*Figure 1*. A workflow of NanoCasTE pipeline
 
 NanoCasTE has several steps (Figure 1): (1) Mapping the reads to the genome using minimap2 (Li 2018) followed by sorted bam file generation using samtools (Li et al. 2009); (2) Filtration of the reads by mapping quality (MQ>40), read length (>750) and SA tag (no supplementary alignments are allowed); (3) Selection of the mapped reads with clipped head (reads mapped on the positive strand) or tail (reads mapped on the negative strand) and the length of the clipped parts closed to the distance from gRNA positions to the TE end; (4) Filtration of the reads by similarity of the clipped part to the target TE sequence; (5) Identification of the inserted sites, TE orientation (+ or - strand) and output the results.
 
