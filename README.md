@@ -61,6 +61,18 @@ An example of the command using files from data and mapped_reads directories of 
 
 `python3 NanoCasTE.py mapped_reads/sorted_rdp3.bam data/rdp3.fastq data/evd.fasta 'TCTTGGTGATGAGAGTGAC,ACCCTGGATTTAAGGTGAGA,AGTTTAAGAGCTCTAGTATG,CTACAAGGTCAATCGAAAGG,TCAACACATGAAAGTCCCGA' rdp3_nanocaste`
 
+## Output files
+NanoCasTE outputs two text files:
+1. .nct file. This is tab separated table with the follwoing columns:
+    * Chromosome:Start..End
+    * No + reads. This column shows the number of reads in the TEI that were mapped to the forward strand
+    * Clipped lengths of + reads. This column contains an information about the length of the clipped parts for the reads in the TEI that were mapped to the forward strand
+    * No - reads This column shows the number of reads in the TEI that were mapped to the reverse strand
+    * Clipped lengths of - reads. This column contains an information about the length of the clipped parts for the reads in the TEI that were mapped to the reversed strand	
+    * Total number of reads in the region. This column shows the total number of reads in the TEI region. This information is useful when highly-covered (usually centromeric repeat region) genomic regions need to be filtered.
+
+2. .nctbed file which is simple bed file of genomic coordinates of all deected TEIs.
+ 
 ## NanoCasTE citation
 We are currently preparing the manuscript.
 
