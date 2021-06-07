@@ -51,10 +51,10 @@ Description of all arguments are listed below:
   **outBed**                path to bed file  
 
 #### optional arguments:
-  *-mrl*  or *--min_read_length*   minimum read length
-  *-q* or *--map_q*  minimum mapping quality
-  *-mlc* or *--min_len_clipped*   minimum coverage of clipped part
-  *-mlcr* or *--long_clipped_report*   minimum length of the clipped part to report
+  *-mrl*  or *--min_read_length*   minimum read length  
+  *-q* or *--map_q*  minimum mapping quality  
+  *-mlc* or *--min_len_clipped*   minimum coverage of clipped part  
+  *-mlcr* or *--long_clipped_report*   minimum length of the clipped part to report  
 
 
 `usage: NanoCasTE.py [-h] [-mrl MIN_READ_LENGTH] [-q MAP_Q]
