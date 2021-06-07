@@ -4,4 +4,4 @@
 We applied a recently published method of Cas9-targeted Nanopore Sequencing (CANS, [Gilpatrick et al., Nature Biotechnolgy, 2021](https://www.nature.com/articles/s41587-020-0407-5))
 
 # NanoCasTE
-NanoCasTE is a new pipeline for detection of Transposable Element Insertions (TEIs) using Nanopore reads obtaining after CANS reads sequencing.
+NanoCasTE is a new pipeline for detection of Transposable Element Insertions (TEIs) using Nanopore reads obtaining after CANS sequencing.
