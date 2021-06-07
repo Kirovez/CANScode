@@ -57,9 +57,9 @@ Description of all arguments are listed below:
                     sorted_bam reads target_fasta guides outBed
 `
 
-An example of the command using files from data directory of NanoCasTE GitHub directory:
+An example of the command using files from data and mapped_reads directories of NanoCasTE GitHub directory:
 
-`python3 NanoCasTE.py mapped_reads/realddm1rep1.bam data/realddm1rep1.fastq data/evd.fasta 'TCTTGGTGATGAGAGTGAC,ACCCTGGATTTAAGGTGAGA,AGTTTAAGAGCTCTAGTATG,CTACAAGGTCAATCGAAAGG,TCAACACATGAAAGTCCCGA' rdp3_nanocaste`
+`python3 NanoCasTE.py mapped_reads/sorted_rdp3.bam data/rdp3.fastq data/evd.fasta 'TCTTGGTGATGAGAGTGAC,ACCCTGGATTTAAGGTGAGA,AGTTTAAGAGCTCTAGTATG,CTACAAGGTCAATCGAAAGG,TCAACACATGAAAGTCCCGA' rdp3_nanocaste`
 
 ## NanoCasTE citation
 We are currently preparing the manuscript.
